@@ -1,12 +1,10 @@
 import { Box, Typography } from "@mui/material";
 import React from "react";
 import Stack from "@mui/material/Stack";
-import CustomDivider from "./CustomDivider";
-import { Divider } from "@mui/material";
 
 const DateHeader = (props) => {
   return (
-    <Box sx={{ width: 800 + "px" }}>
+    <Box sx={{ width: 800 + "px", background: "#f1f3f5" }}>
       <Stack direction="row" spacing={5}>
         <Box
           sx={{
@@ -48,17 +46,6 @@ const DateHeader = (props) => {
           >
             {props.date}
           </Typography>
-          {/* <Divider
-            sx={{
-              height: 36 + "px",
-              position: "absolute",
-              // left: 16.3 + "%",
-              // left: 16.3 + "px",
-              // top: 73 + "%",
-              zIndex: "5",
-            }}
-            orientation="vertical"
-          /> */}
         </Box>
       </Stack>
     </Box>

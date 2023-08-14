@@ -3,26 +3,12 @@ import { styled } from "@mui/material/styles";
 import Box from "@mui/material/Box";
 import List from "@mui/material/List";
 import ListItem from "@mui/material/ListItem";
-import ListItemAvatar from "@mui/material/ListItemAvatar";
-import ListItemIcon from "@mui/material/ListItemIcon";
-import ListItemText from "@mui/material/ListItemText";
-import Avatar from "@mui/material/Avatar";
-import IconButton from "@mui/material/IconButton";
-import FormGroup from "@mui/material/FormGroup";
-import FormControlLabel from "@mui/material/FormControlLabel";
-import Checkbox from "@mui/material/Checkbox";
 import Grid from "@mui/material/Grid";
 import Typography from "@mui/material/Typography";
-import FolderIcon from "@mui/icons-material/Folder";
-import DeleteIcon from "@mui/icons-material/Delete";
-
 import { Stack } from "@mui/material";
-
-import ListEvent from "./ListEvent";
 import AuthorIMG from "../Photo.svg";
 import GroupsIcon from "@mui/icons-material/Groups";
 import ChatIcon from "@mui/icons-material/Chat";
-import DoneOutlinedIcon from "@mui/icons-material/DoneOutlined";
 import PriorityHighIcon from "@mui/icons-material/PriorityHigh";
 import QueryBuilderIcon from "@mui/icons-material/QueryBuilder";
 import CustomDivider from "./CustomDivider";
@@ -33,15 +19,12 @@ const Demo = styled("div")(({ theme }) => ({
 }));
 
 export default function TasksList2() {
-  // const [dense, setDense] = React.useState(true);
-  // const [secondary, setSecondary] = React.useState(true);
-
   return (
     <Box sx={{ flexGrow: 1, maxWidth: 752 }}>
       <Grid container spacing={2}>
         <Grid item xs={12}>
           <Demo>
-            <List dense={true}>
+            <List sx={{ background: "#f1f3f5" }} dense={true}>
               <ListItem>
                 <Stack
                   direction="row"
@@ -72,7 +55,6 @@ export default function TasksList2() {
                       }}
                     />
                   </Box>
-
                   <Box>
                     <Typography
                       sx={{ mt: 20 + "px" }}
@@ -101,7 +83,6 @@ export default function TasksList2() {
                   <Typography variant="Body1" color="#adb5bd">
                     11:30 AM
                   </Typography>
-
                   <Box>
                     <CustomDivider />
                     <ChatIcon
@@ -113,7 +94,6 @@ export default function TasksList2() {
                       }}
                     />
                   </Box>
-
                   <Box>
                     <Typography
                       sx={{ mt: 20 + "px" }}
@@ -153,7 +133,6 @@ export default function TasksList2() {
                       }}
                     />
                   </Box>
-
                   <Box>
                     <Typography
                       sx={{ mt: 20 + "px" }}
@@ -191,7 +170,6 @@ export default function TasksList2() {
                       borderRadius: 50 + "%",
                     }}
                   />
-
                   <Box>
                     <Typography
                       sx={{ mt: 20 + "px" }}
