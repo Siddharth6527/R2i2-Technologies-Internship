@@ -16,7 +16,7 @@ import Typography from "@mui/material/Typography";
 import FolderIcon from "@mui/icons-material/Folder";
 import DeleteIcon from "@mui/icons-material/Delete";
 
-import { Stack } from "@mui/material";
+import { Stack, Divider } from "@mui/material";
 
 import ListEvent from "./ListEvent";
 import AuthorIMG from "../Photo.svg";
@@ -25,6 +25,7 @@ import ChatOutlinedIcon from "@mui/icons-material/ChatOutlined";
 import DoneOutlinedIcon from "@mui/icons-material/DoneOutlined";
 import BrowserUpdatedOutlinedIcon from "@mui/icons-material/BrowserUpdatedOutlined";
 import BookmarkIcon from "@mui/icons-material/Bookmark";
+import CustomDivider from "../components/CustomDivider";
 
 function generate(element) {
   return [0, 1, 2].map((value) =>
@@ -55,17 +56,35 @@ export default function TasksList() {
                     11:30 AM
                   </Typography>
 
-                  <SwitchAccountIcon
-                    sx={{
-                      color: "white",
-                      background: "#4c6ef5",
-                      padding: 8 + "px",
-                      borderRadius: 50 + "%",
-                    }}
-                  />
+                  <Box>
+                    <Divider
+                      sx={{
+                        height: 37 + "px",
+                        position: "absolute",
+                        left: 17 + "%",
+                        top: -20 + "px",
+                        zIndex: "8",
+                      }}
+                      orientation="vertical"
+                    />
+                    <CustomDivider />
+                    <SwitchAccountIcon
+                      sx={{
+                        color: "white",
+                        background: "#4c6ef5",
+                        padding: 8 + "px",
+                        borderRadius: 50 + "%",
+                      }}
+                    />
+                  </Box>
 
                   <Box>
-                    <Typography variant="subtitle1" color="initial">
+                    {/* <Box sx={{ height: 20 + "px" }} /> */}
+                    <Typography
+                      sx={{ mt: 20 + "px" }}
+                      variant="subtitle1"
+                      color="initial"
+                    >
                       New task assigned to you
                     </Typography>
                     <Box>
@@ -89,17 +108,24 @@ export default function TasksList() {
                     11:30 AM
                   </Typography>
 
-                  <ChatOutlinedIcon
-                    sx={{
-                      color: "white",
-                      background: "#DC395F",
-                      padding: 8 + "px",
-                      borderRadius: 50 + "%",
-                    }}
-                  />
+                  <Box>
+                    <CustomDivider />
+                    <ChatOutlinedIcon
+                      sx={{
+                        color: "white",
+                        background: "#DC395F",
+                        padding: 8 + "px",
+                        borderRadius: 50 + "%",
+                      }}
+                    />
+                  </Box>
 
                   <Box>
-                    <Typography variant="subtitle1" color="initial">
+                    <Typography
+                      sx={{ mt: 20 + "px" }}
+                      variant="subtitle1"
+                      color="initial"
+                    >
                       New feedback recieved for Task Name
                     </Typography>
                     <Box>
@@ -123,17 +149,24 @@ export default function TasksList() {
                     11:30 AM
                   </Typography>
 
-                  <DoneOutlinedIcon
-                    sx={{
-                      color: "white",
-                      background: " #3FB883",
-                      padding: 8 + "px",
-                      borderRadius: 50 + "%",
-                    }}
-                  />
+                  <Box>
+                    <CustomDivider />
+                    <DoneOutlinedIcon
+                      sx={{
+                        color: "white",
+                        background: " #3FB883",
+                        padding: 8 + "px",
+                        borderRadius: 50 + "%",
+                      }}
+                    />
+                  </Box>
 
                   <Box>
-                    <Typography variant="subtitle1" color="initial">
+                    <Typography
+                      sx={{ mt: 20 + "px" }}
+                      variant="subtitle1"
+                      color="initial"
+                    >
                       Task marked completed by you
                     </Typography>
                     <Box>
@@ -156,18 +189,25 @@ export default function TasksList() {
                   <Typography variant="Body1" color="#adb5bd">
                     11:30 AM
                   </Typography>
-
-                  <BrowserUpdatedOutlinedIcon
-                    sx={{
-                      color: "white",
-                      background: "#FB8789",
-                      padding: 8 + "px",
-                      borderRadius: 50 + "%",
-                    }}
-                  />
+                  <Box>
+                    <CustomDivider />
+                    <BrowserUpdatedOutlinedIcon
+                      sx={{
+                        color: "white",
+                        background: "#FB8789",
+                        padding: 8 + "px",
+                        borderRadius: 50 + "%",
+                        zIndex: "10",
+                      }}
+                    />
+                  </Box>
 
                   <Box>
-                    <Typography variant="subtitle1" color="initial">
+                    <Typography
+                      sx={{ mt: 20 + "px" }}
+                      variant="subtitle1"
+                      color="initial"
+                    >
                       Task Name updated for journey Journey Name
                     </Typography>
                     <Box>
@@ -190,18 +230,33 @@ export default function TasksList() {
                   <Typography variant="Body1" color="#adb5bd">
                     11:30 AM
                   </Typography>
-
-                  <BookmarkIcon
-                    sx={{
-                      color: "white",
-                      background: "#F2BB27",
-                      padding: 8 + "px",
-                      borderRadius: 50 + "%",
-                    }}
-                  />
+                  <Box>
+                    <Divider
+                      sx={{
+                        height: 100 + "px",
+                        position: "absolute",
+                        left: 17 + "%",
+                        top: 73 + "%",
+                        zIndex: "5",
+                      }}
+                      orientation="vertical"
+                    />
+                    <BookmarkIcon
+                      sx={{
+                        color: "white",
+                        background: "#F2BB27",
+                        padding: 8 + "px",
+                        borderRadius: 50 + "%",
+                      }}
+                    />
+                  </Box>
 
                   <Box>
-                    <Typography variant="subtitle1" color="initial">
+                    <Typography
+                      sx={{ mt: 20 + "px" }}
+                      variant="subtitle1"
+                      color="initial"
+                    >
                       Follow up on feedback for Task Name completed on Date
                       XX/YY/ZZZZ
                     </Typography>

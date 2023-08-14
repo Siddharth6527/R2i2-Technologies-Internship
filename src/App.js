@@ -7,13 +7,14 @@ function App() {
     <Box
       sx={{
         width: 1440 + "px",
-        height: 1024 + "px",
+        height: 1300 + "px",
         borderRadius: 40 + "px",
-        backgroundColor: "primary.dark",
-        "&:hover": {
-          backgroundColor: "primary.main",
-          opacity: [0.9, 0.8, 0.7],
-        },
+
+        // backgroundColor: "primary.dark",
+        // "&:hover": {
+        //   backgroundColor: "primary.main",
+        //   opacity: [0.9, 0.8, 0.7],
+        // },
       }}
     >
       <Box sx={{ height: 171 + "px" }} />
@@ -23,13 +24,15 @@ function App() {
           height: 420 + "px",
           // mt: 171 + "px",
           ml: 158 + "px",
+
           borderRadius: 6 + "px",
+
           // backgroundColor: "primary.dark",
-          backgroundColor: "green",
-          "&:hover": {
-            backgroundColor: "primary.main",
-            opacity: [0.9, 0.8, 0.7],
-          },
+          // backgroundColor: "green",
+          // "&:hover": {
+          //   backgroundColor: "primary.main",
+          //   opacity: [0.9, 0.8, 0.7],
+          // },
         }}
       >
         <DayCard />

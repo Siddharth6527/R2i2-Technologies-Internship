@@ -25,6 +25,8 @@ import ChatIcon from "@mui/icons-material/Chat";
 import DoneOutlinedIcon from "@mui/icons-material/DoneOutlined";
 import PriorityHighIcon from "@mui/icons-material/PriorityHigh";
 import QueryBuilderIcon from "@mui/icons-material/QueryBuilder";
+import CustomDivider from "./CustomDivider";
+import { Divider } from "@mui/material";
 
 const Demo = styled("div")(({ theme }) => ({
   backgroundColor: theme.palette.background.paper,
@@ -49,18 +51,34 @@ export default function TasksList2() {
                   <Typography variant="Body1" color="#adb5bd">
                     11:30 AM
                   </Typography>
-
-                  <GroupsIcon
-                    sx={{
-                      color: "white",
-                      background: "#4c6ef5",
-                      padding: 8 + "px",
-                      borderRadius: 50 + "%",
-                    }}
-                  />
+                  <Box>
+                    <Divider
+                      sx={{
+                        height: 37 + "px",
+                        position: "absolute",
+                        left: 17 + "%",
+                        top: -20 + "px",
+                        zIndex: "8",
+                      }}
+                      orientation="vertical"
+                    />
+                    <CustomDivider />
+                    <GroupsIcon
+                      sx={{
+                        color: "white",
+                        background: "#4c6ef5",
+                        padding: 8 + "px",
+                        borderRadius: 50 + "%",
+                      }}
+                    />
+                  </Box>
 
                   <Box>
-                    <Typography variant="subtitle1" color="initial">
+                    <Typography
+                      sx={{ mt: 20 + "px" }}
+                      variant="subtitle1"
+                      color="initial"
+                    >
                       Meeting with Bobby Charlie
                     </Typography>
                     <Box>
@@ -84,17 +102,24 @@ export default function TasksList2() {
                     11:30 AM
                   </Typography>
 
-                  <ChatIcon
-                    sx={{
-                      color: "white",
-                      background: "#A259FF",
-                      padding: 8 + "px",
-                      borderRadius: 50 + "%",
-                    }}
-                  />
+                  <Box>
+                    <CustomDivider />
+                    <ChatIcon
+                      sx={{
+                        color: "white",
+                        background: "#A259FF",
+                        padding: 8 + "px",
+                        borderRadius: 50 + "%",
+                      }}
+                    />
+                  </Box>
 
                   <Box>
-                    <Typography variant="subtitle1" color="initial">
+                    <Typography
+                      sx={{ mt: 20 + "px" }}
+                      variant="subtitle1"
+                      color="initial"
+                    >
                       Chat about Design Mentorship
                     </Typography>
                     <Box>
@@ -117,18 +142,24 @@ export default function TasksList2() {
                   <Typography variant="Body1" color="#adb5bd">
                     11:30 AM
                   </Typography>
-
-                  <PriorityHighIcon
-                    sx={{
-                      color: "white",
-                      background: " #E94235",
-                      padding: 8 + "px",
-                      borderRadius: 50 + "%",
-                    }}
-                  />
+                  <Box>
+                    <CustomDivider />
+                    <PriorityHighIcon
+                      sx={{
+                        color: "white",
+                        background: " #E94235",
+                        padding: 8 + "px",
+                        borderRadius: 50 + "%",
+                      }}
+                    />
+                  </Box>
 
                   <Box>
-                    <Typography variant="subtitle1" color="initial">
+                    <Typography
+                      sx={{ mt: 20 + "px" }}
+                      variant="subtitle1"
+                      color="initial"
+                    >
                       Critical delay observed in time line adherence
                     </Typography>
                     <Box>
@@ -162,7 +193,11 @@ export default function TasksList2() {
                   />
 
                   <Box>
-                    <Typography variant="subtitle1" color="initial">
+                    <Typography
+                      sx={{ mt: 20 + "px" }}
+                      variant="subtitle1"
+                      color="initial"
+                    >
                       Finish project documentation for review (1-1 checkin)
                     </Typography>
                     <Box>
