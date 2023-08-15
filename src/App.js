@@ -6,19 +6,27 @@ function App() {
   return (
     <Box
       sx={{
+        height: {
+          sm: 1300 + "px",
+        },
         width: 1920 + "px",
-        height: 1300 + "px",
         borderRadius: 40 + "px",
 
-        background: "#f1f3f5",
+        background: "#f8f9fa",
       }}
     >
-      <Box sx={{ height: 171 + "px" }} />
+      <Box sx={{ height: 171 + "px", color: "#f8f9fa" }} />
       <Box
         sx={{
-          width: 800 + "px",
+          width: {
+            xs: 1400 + "px",
+            sm: 800 + "px",
+          },
           height: 420 + "px",
-          ml: 158 + "px",
+          ml: {
+            xs: 20 + "px",
+            sm: 158 + "px",
+          },
           borderRadius: 6 + "px",
         }}
       >

@@ -24,7 +24,7 @@ export default function TasksList2() {
       <Grid container spacing={2}>
         <Grid item xs={12}>
           <Demo>
-            <List sx={{ background: "#f1f3f5" }} dense={true}>
+            <List sx={{ background: "#f8f9fa" }} dense={true}>
               <ListItem>
                 <Stack
                   direction="row"

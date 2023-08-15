@@ -4,7 +4,7 @@ import Stack from "@mui/material/Stack";
 
 const DateHeader = (props) => {
   return (
-    <Box sx={{ width: 800 + "px", background: "#f1f3f5" }}>
+    <Box sx={{ width: 800 + "px", background: "#f8f9fa" }}>
       <Stack direction="row" spacing={5}>
         <Box
           sx={{

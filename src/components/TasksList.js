@@ -24,7 +24,7 @@ export default function TasksList() {
       <Grid container spacing={2}>
         <Grid item xs={12}>
           <Demo>
-            <List sx={{ background: "#f1f3f5" }} dense={true}>
+            <List sx={{ background: "#f8f9fa" }} dense={true}>
               <ListItem>
                 <Stack
                   direction="row"
@@ -59,7 +59,7 @@ export default function TasksList() {
                     <Typography
                       sx={{ mt: 20 + "px" }}
                       variant="subtitle1"
-                      color="initial"
+                      color="#3FB883"
                     >
                       New task assigned to you
                     </Typography>
