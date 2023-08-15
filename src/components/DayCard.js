@@ -9,6 +9,7 @@ import { Divider, Grid } from "@mui/material";
 export default function DayCard() {
   return (
     <>
+      {/* Day Card 1 */}
       <Card
         sx={{
           minWidth: 275,
@@ -17,11 +18,14 @@ export default function DayCard() {
           boxShadow: "none",
         }}
       >
+        {/* Resuable Components */}
         <CardContent>
+          {/* // Passing Props for keeping code lean */}
           <DateHeader day="WED" date="30" month="Jul" />
           <TasksList />
         </CardContent>
       </Card>
+      {/* Added Divider */}
       <Grid sx={{ width: 608 + "px" }} container spacing={2}>
         <Grid item xs={3} />
         <Grid item xs={9}>
@@ -32,6 +36,7 @@ export default function DayCard() {
           />
         </Grid>
       </Grid>
+      {/* Day Card 2 */}
       <Card
         sx={{
           minWidth: 275,
@@ -51,7 +56,9 @@ export default function DayCard() {
           }}
           orientation="vertical"
         />
+        {/* Resuable Components */}
         <CardContent>
+          {/* // Passing Props for keeping code lean */}
           <DateHeader day="THU" date="29" month="Jul" />
           <TasksList2 />
         </CardContent>

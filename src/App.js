@@ -1,8 +1,11 @@
 import "./App.css";
 import { Box } from "@mui/material";
 import DayCard from "./components/DayCard";
+// Using React JS with Material UI
 
 function App() {
+  // Single Page Application
+  // Page Layouts
   return (
     <Box
       sx={{
@@ -17,6 +20,7 @@ function App() {
     >
       <Box sx={{ height: 171 + "px", color: "#f8f9fa" }} />
       <Box
+        // Code for Mobile Responsive
         sx={{
           width: {
             xs: 1400 + "px",
@@ -30,6 +34,7 @@ function App() {
           borderRadius: 6 + "px",
         }}
       >
+        {/* Resuable Component*/}
         <DayCard />
       </Box>
     </Box>

@@ -2,7 +2,10 @@ import { Box, Typography } from "@mui/material";
 import React from "react";
 import Stack from "@mui/material/Stack";
 
+// Passing Props for keeping code lean
 const DateHeader = (props) => {
+  // This is for showing day, date and month
+
   return (
     <Box sx={{ width: 800 + "px", background: "#f8f9fa" }}>
       <Stack direction="row" spacing={5}>
